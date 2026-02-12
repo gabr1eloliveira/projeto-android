@@ -78,8 +78,6 @@ nav a{
 nav a:hover{
     background-color: var(--cor4);
     color: var(--cor3);
-    transform: translatex(10px);
-    transition-duration: 0.5s;
     border-radius: 10px;
 }
 
@@ -199,4 +197,24 @@ footer a{
 footer a:hover{
     color: var(--cor1);
     text-decoration: underline;
+}
+
+#navbar_btn{
+    display: none;
+}
+
+@media screen and (max-width:1000px){
+    #navbar_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        font-size: 1.3em;
+        border: none;
+        pointer
+    }   
+
+    #navbar a{
+        display: none;
+    }
 }
